@@ -48,8 +48,9 @@ async def main():
     '''
     News = await GrabNewsUrls()
     newsUrlString = ""
-    for news in News[:-1]:
+    for news in News[1:6]:
         newsUrlString += "https://www.dn.se" + str(news) + "\n"
+    newsUrlString += "\n" + "https://www.dn.se/nyhetsdygnet" + "\n"
     print(newsUrlString)
 
 if __name__ == "__main__":
