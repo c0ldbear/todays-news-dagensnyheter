@@ -52,6 +52,7 @@ async def main():
         newsUrlString += "https://www.dn.se" + str(news) + "\n"
     newsUrlString += "\n" + "https://www.dn.se/nyhetsdygnet" + "\n"
     print(newsUrlString)
+    print("\n Number of news: " + str(len(News)))
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
